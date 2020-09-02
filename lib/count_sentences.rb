@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-   
+   # uses a RegEx for the punctuation split
+   # iterates thru strings, returns 0 if no sentence
     self.split(/[.?!]/).reject {|x| x.empty?}.count
     
   end
